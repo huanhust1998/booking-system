@@ -3,10 +3,12 @@ import React from "react"
 import { useRoutes } from "react-router-dom"
 
 const Home = lazy(() => import("../pages/home"))
+const ChangPassword = lazy(() => import("../pages/password"))
 
 const RoutesConfig = () => {
   const routers = [
     { path: "/", element: <Home /> },
+    { path: "/change-password", element: <ChangPassword /> },
     // {
     //   path: PATHS_NAME.LLM,
     //   element: (
